@@ -55,12 +55,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    
 }
 
 .desktop {
     width: 640px;
     height: 140px;
-    background-image: url("files/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg"), ;
+    background-color: #fff;
+   /* background-image: url("files/360_F_320596186_eFYMjkK769jB7qXTXF6aP9lXNftz0VCU.jpg"), */
     border: 2px solid #000;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -125,4 +127,29 @@ body {
     resize: none;
     margin-bottom: 10px;
     font-family: "Menlo";
+}
+
+/* Additional styles for the contact form pop-up */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+#contact-form button {
+    margin-top: 10px;
+}
+
+#close-contact-button {
+    margin-top: 10px;
 }

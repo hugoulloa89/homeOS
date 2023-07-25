@@ -27,7 +27,7 @@
                 <img src="files/937755.png" alt="File Icon">
                 <div href="#" class="icon-label">Live Stream</div>
             </div>
-            <div class="icon">
+            <div class="icon" id="contact-icon">
                 <img  src="files/937736.png" alt="Disk Icon">
                 <div href="contact.html" class="icon-label">Contact</div>
             </div>
@@ -43,9 +43,29 @@
         <div class="popup-content">
             <textarea id="text-edit-area"></textarea>
             <button id="save-button">Save</button>
+            <button id="close-edit-button">Close</button>
         </div>
     </div>
+    <!-- Pop-up Contact form-->
+<div class="popup" id="contact-popup">
+        <div class="popup-content">
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
 
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <button id="close-contact-button">Close</button>
+        </div>
+
+</div>
     <script src="script.js"></script>
 </body>
 </html>

@@ -23,7 +23,7 @@
                 <img  src="files/937737.png" alt="Folder Icon">
                 <div href="index.html" class="icon-label">Home</div>
             </div>
-            <div class="icon">
+            <div class="icon" id="media-icon">
                 <img src="files/937755.png" alt="File Icon">
                 <div href="#" class="icon-label">Live Stream</div>
             </div>
@@ -65,6 +65,24 @@
             </form>
             
         </div>
+
+        <!-- Media Player Pop-up -->
+    <div class="popup" id="media-popup">
+        <div class="popup-content">
+            <h2>Media Player</h2>
+            <audio id="audio-player" controls>
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="media-controls">
+                <button id="play-button">Play</button>
+                <button id="pause-button">Pause</button>
+                <button id="stop-button">Stop</button>
+                <!-- Add other media control buttons as needed (e.g., volume, mute, etc.) -->
+            </div>
+            <button id="close-media-button">Close</button>
+        </div>
+    </div>
 
 </div>
     <script src="script.js"></script>

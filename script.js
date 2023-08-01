@@ -78,3 +78,47 @@ contactForm.addEventListener("submit", (event) => {
     // Close the contact form popup
     contactPopup.style.display = "none";
 });
+
+// ... Your existing JavaScript code ...
+
+// Media Player
+const mediaIcon = document.getElementById("media-icon");
+const mediaPopup = document.getElementById("media-popup");
+const closeMediaButton = document.getElementById("close-media-button");
+const audioPlayer = document.getElementById("audio-player");
+const playButton = document.getElementById("play-button");
+const pauseButton = document.getElementById("pause-button");
+const stopButton = document.getElementById("stop-button");
+
+mediaIcon.addEventListener("click", () => {
+    mediaPopup.style.display = "flex";
+});
+
+closeMediaButton.addEventListener("click", () => {
+    mediaPopup.style.display = "none";
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0;
+});
+
+playButton.addEventListener("click", () => {
+    audioPlayer.play();
+});
+
+pauseButton.addEventListener("click", () => {
+    audioPlayer.pause();
+});
+
+stopButton.addEventListener("click", () => {
+    audioPlayer.pause();
+    audioPlayer.currentTime = 0;
+});
+
+// Pause the music when the pop-up is closed
+mediaPopup.addEventListener("click", (event) => {
+    if (event.target === mediaPopup) {
+        audioPlayer.pause();
+        audioPlayer.currentTime = 0;
+        mediaPopup.style.display = "none";
+    }
+});
+

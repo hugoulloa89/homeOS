@@ -127,13 +127,27 @@ body {
     resize: none;
     margin-bottom: 10px;
     font-family: "Menlo";
+   
+}
+
+#save-button {
+    font-family: "Menlo";
+    font-weight: bold;
+}
+
+#close-edit-button {
+    font-family: "Menlo";
+    font-weight: bold;
 }
 
 /* Additional styles for the contact form pop-up */
+
 #contact-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
+
 }
 
 #contact-form label {
@@ -148,8 +162,23 @@ body {
 
 #contact-form button {
     margin-top: 10px;
+    font-family: "Menlo";
+    font-weight: bold;
 }
 
 #close-contact-button {
+    margin-top: 10px;
+    font-family: "Menlo";
+    font-weight: bold;
+}
+
+/* Style for Media poput */
+.media-controls {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#close-media-button {
     margin-top: 10px;
 }
